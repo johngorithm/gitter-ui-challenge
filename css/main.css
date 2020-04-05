@@ -216,11 +216,20 @@ body {
 	margin-bottom: var(--n10);
 }
 
+.section-body {
+	display: flex;
+	flex-flow: row wrap;
+	margin-right: -10px;
+}
+
 .repo-item, .gist-item {
+	flex-grow: 1;
 	background-color: white;
 	padding: 19px var(--n20) 15px;
+	width: 200px;
 	border-radius: 3px;
 	margin-bottom: 13px;
+	margin-right: 10px;
 }
 
 .repo-title, .gist-title {
