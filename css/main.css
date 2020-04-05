@@ -47,6 +47,7 @@ body {
 .main .banner-section {
 	position: relative;
 	height: 230px;
+	overflow-x: visible;
 }
 .main .banner {
 	background: url('../assets/bg.jpg');
@@ -60,8 +61,9 @@ body {
 .main .banner-section .banner-text {
 	position: absolute;
 	padding: 0 1.5rem;
-	width: 100%;
 	top: 50%;
+	left: 0;
+	right: 0;
 	transform: translateY(-50%);
 }
 .main .banner-overlay {
@@ -74,6 +76,7 @@ body {
 }
 .main .banner-text h1{
 	color: white;
+	margin-bottom: 7px;
 }
 
 .main .banner-text p  {
