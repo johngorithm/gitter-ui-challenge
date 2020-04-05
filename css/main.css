@@ -1,15 +1,16 @@
 :root {
 	--primary-color: #2D9CDB;
 	--secondary-color: #56CCF2;
-	--text-light-grey: #9E9E9E;
+	--text-light-grey: #6B6B6B;
+	--accent-color: rgba(86, 204, 242, 0.33);
+	--secondary-accent-color: rgba(242, 153, 74, 0.35);
 	--n24: 1.5rem;
 	--n20: 1.25rem;
 	--n16: 1rem;
 	--n10: 0.625rem;
 	--n8: 0.5rem;
 	overflow-x: hidden;
-	--accent-color: rgba(86, 204, 242, 0.33);
-	--secondary-accent-color: rgba(242, 153, 74, 0.35);
+	font-family: 'Sen', sans-serif;
 }
 body, p, h1, h2, h3, h4, h5, h6, div {
 	padding: 0;
@@ -19,7 +20,6 @@ body, p, h1, h2, h3, h4, h5, h6, div {
 body {
 	background: #F3F3F3;
 	overflow-x: hidden;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 /* Header */
 .header {
@@ -36,7 +36,7 @@ body {
 }
 
 .header .brand {
-	font-size: 1.rem;
+	font-size: 1rem;
 	font-weight: 600;
 }
 
@@ -79,7 +79,7 @@ body {
 .main .banner-text p  {
 	color: whitesmoke;
 	font-weight: lighter;
-	font-variant: small-caps;
+	font-size: 13px;
 }
 
 /* user card */
@@ -87,7 +87,7 @@ body {
 	padding: 1.5rem;
 	background: white;
 	margin: -2rem 1.5rem 0;
-	border-radius: 5px;
+	border-radius: 3px;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -139,7 +139,7 @@ body {
 	height: 110px;
 	margin-right: var(--n16);
 	background: white;
-	border-radius: var(--n10);
+	border-radius: 3px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -156,9 +156,8 @@ body {
 	font-weight: 100;
 }
 .stats .stat-item .label {
-	font-variant: normal;
 	font-size: 0.75rem;
-	color: var(--text-light-grey);
+	color: var(--primary-color);
 }
 
 /* Profile */
@@ -166,7 +165,7 @@ body {
 	margin: 0 var(--n24);
 	padding: var(--n24) var(--n24);
 	background-color: white;
-	border-radius: 5px;
+	border-radius: 3px;
 }
 
 .profile .profile-item {
@@ -201,7 +200,7 @@ body {
 
 
 /* Repos/Gists Section */
-.repos, .gists {
+.repos, .gists, .orgs-section {
 	margin: 2.3rem var(--n24);
 }
 
@@ -215,7 +214,7 @@ body {
 .repo-item, .gist-item {
 	background-color: white;
 	padding: 19px var(--n20) 15px;
-	border-radius: 5px;
+	border-radius: 3px;
 	margin-bottom: 13px;
 }
 
@@ -289,6 +288,24 @@ body {
 }
 
 
+/* Organisations */
+.org-item {
+	background-color: white;
+	padding: 19px var(--n20) 15px;
+	border-radius: 3px;
+	margin-bottom: 13px;
+	display: flex;
+	align-items: center;
+}
+
+.org-item i {
+	margin-right: 17px;
+	font-size: 33px;
+}
+
+.org-item:first-child {
+	margin-bottom: 13px;
+}
 
 /* Bottom space */
 .bottom-spacer {
